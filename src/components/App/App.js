@@ -20,7 +20,7 @@ function App() {
 
  
 
-  function renderTemplate({ alias, data }) {
+  function renderTemplate(alias, data) {
     return (
       <Template
         alias={alias}
@@ -36,7 +36,7 @@ function App() {
 
   return (
     <div className="App">
-      {renderTemplate(dataArr[slide - 1]) }
+      {renderTemplate(dataArr[slide - 1].alias, dataArr[slide - 1].data) }
     </div>
   );
 }
