@@ -32,9 +32,7 @@ function App() {
     );
   }
 
-  React.useEffect(() => {
-    window.renderTemplate = renderTemplate;
-  }, []);
+  window.renderTemplate = renderTemplate;
 
   return (
     <div className="App">
