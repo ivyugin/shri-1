@@ -33,6 +33,7 @@ function App() {
   }
 
   window.renderTemplate = renderTemplate;
+  console.log(window)
 
   return (
     <div className="App">
