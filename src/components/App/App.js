@@ -9,7 +9,7 @@ function useQuery() {
   return new URLSearchParams(useLocation().search);
 }
 
-function App() {
+function App({ alias, data }) {
   const [voteUserID, setVoteUserID] = React.useState();
 
   const query = useQuery();
@@ -18,26 +18,15 @@ function App() {
 
   const isLight = theme === 'light';
 
- 
-
-  function renderTemplate(alias, data) {
-    return (
+return (
+    <div className="App">
       <Template
-        alias={alias}
-        data={data}
+        alias={slide ? dataArr[slide-1].alias : alias}
+        data={slide ? dataArr[slide-1].data : data}
         isLight={isLight}
         voteUserID={voteUserID}
         setVoteUserID={setVoteUserID}
       />
-    );
-  }
-
-  window.renderTemplate = renderTemplate;
-  console.log(window)
-
-  return (
-    <div className="App">
-      {renderTemplate(dataArr[slide - 1].alias, dataArr[slide - 1].data) }
     </div>
   );
 }
