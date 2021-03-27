@@ -40,6 +40,16 @@
   outline: none;
 }
 
+.Vote__button:disabled {
+  background-image: url(../../../images/button-hover-dark.svg);
+  cursor: default;
+}
+
+.theme_light .Vote__button:disabled {
+  background-image: url(../../../images/button-hover-light.svg);
+  cursor: default;
+}
+
 @media screen and (min-width: 660px) {
   .Vote__button_up {
     grid-column-start: 3;

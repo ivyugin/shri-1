@@ -18,6 +18,8 @@ function App() {
 
   const isLight = theme === 'light';
 
+ 
+
   function renderTemplate({ alias, data }) {
     return (
       <Template
@@ -30,9 +32,13 @@ function App() {
     );
   }
 
+  React.useEffect(() => {
+    window.renderTemplate = renderTemplate;
+  }, []);
+
   return (
     <div className="App">
-      { renderTemplate(dataArr[slide - 1]) }
+      {renderTemplate(dataArr[slide - 1]) }
     </div>
   );
 }
