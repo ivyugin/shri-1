@@ -1,0 +1,20 @@
+.Diagram__totalText {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 22px;
+  /* or 110% */
+
+  text-align: center;
+
+  /* White */
+
+  color: #FCFBF7;
+  width: 110px;
+  margin: 0 auto;
+}
+
+.theme_light .Diagram__totalText {
+  color: #261C00;
+}

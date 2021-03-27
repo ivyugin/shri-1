@@ -1,0 +1,21 @@
+@import url(./styles/Diagram__legend.css);
+@import url(./styles/Diagram__separator.css);
+@import url(./styles/Diagram__radial.css);
+@import url(./styles/Diagram__pic.css);
+@import url(./styles/Diagram__text.css);
+@import url(./styles/Diagram__totalText.css);
+@import url(./styles/Diagram__differenceText.css);
+
+.Diagram {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: auto;
+}
+
+@media screen and (max-width: 660px) {
+  .Diagram {
+    flex-direction: column;
+    margin-top: 32px;
+  }
+}

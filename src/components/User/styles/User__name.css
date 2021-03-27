@@ -1,0 +1,26 @@
+.User__name {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  /* or 112% */
+
+  text-align: center;
+
+  /* White */
+
+  color: #FCFBF7;
+  width: 80px;
+  margin: 6px auto 0;
+}
+
+.User_s .User__name {
+  width: auto;
+
+  margin: 0 0 4px;
+}
+
+.theme_light .User__name {
+  color: #261C00;
+}

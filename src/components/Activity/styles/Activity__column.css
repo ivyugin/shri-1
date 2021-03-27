@@ -1,0 +1,20 @@
+.Activity__column {
+  align-self: end;
+  grid-column: span 2;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media screen and (min-width: 660px) {
+  .Activity__column:nth-of-type(24n+13) {
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .Activity__column:nth-of-type(14n+8) {
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+}

@@ -1,0 +1,9 @@
+@import url(./styles/Template__body.css);
+@import url(./styles/Template__title.css);
+@import url(./styles/Template__subtitle.css);
+@import url(./styles/Template__container.css);
+
+.Template {
+  font-family:  Roboto, Helvetica, Arial, sans-serif;
+  height: 100vh;
+}

@@ -1,0 +1,15 @@
+.Diagram__radial {
+  width: 240px;
+  height: 240px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  
+} 
+
+@media screen and (max-width: 660px) {
+  .Diagram__radial {
+    width: 328px;
+    height: 328px;
+  }
+}

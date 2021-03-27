@@ -1,0 +1,15 @@
+.Leaders__place_left {
+  position: relative;
+  margin: 0;
+  right: 8px;
+}
+
+.Leaders__place_right {
+  position: relative;
+  margin: 0;
+  left: 8px;
+}
+
+.theme_light .Leaders__place {
+  color: #261C00;
+}

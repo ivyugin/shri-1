@@ -1,0 +1,13 @@
+.Chart__liaders {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  margin: 24px auto;
+}
+
+@media screen and (max-width: 660px) {
+  .Chart__liaders {
+    flex-direction: column;
+  }
+}

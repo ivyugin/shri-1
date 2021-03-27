@@ -1,0 +1,10 @@
+@import url(./styles/DiagramСategories__color.css);
+@import url(./styles/DiagramСategories__commits.css);
+@import url(./styles/DiagramСategories__title.css);
+@import url(./styles/DiagramСategories__wrapper.css);
+
+.DiagramСategories {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

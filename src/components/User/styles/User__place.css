@@ -1,0 +1,19 @@
+.User__place {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 32px;
+  /* identical to box height, or 107% */
+
+  text-align: center;
+
+  /* Black */
+
+  color: #FCFBF7;
+  margin: 6px auto 0;
+}
+
+.theme_light .User__place {
+  color: #261C00;
+}

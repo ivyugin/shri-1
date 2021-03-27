@@ -1,0 +1,10 @@
+.Diagram__legend {
+  width: 304px;
+  margin-left: 40px;
+}
+
+@media screen and (max-width: 660px) {
+  .Diagram__legend {
+    margin: 32px auto 0;
+  }
+}

@@ -1,0 +1,13 @@
+.User__separator {
+  width: 60px;
+  height: 1px;
+
+  /* Black */
+
+  background: #918F8A;
+  border: none;
+}
+
+.theme_light .User__separator {
+  background: #261C00;
+}

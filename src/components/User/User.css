@@ -1,0 +1,34 @@
+@import url(./styles/User__avatar.css);
+@import url(./styles/User__name.css);
+@import url(./styles/User__valueText.css);
+@import url(./styles/User__description.css);
+@import url(./styles/User__emoji.css);
+@import url(./styles/User__separator.css);
+@import url(./styles/User__place.css);
+
+.User {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.User_s.User {
+  flex-direction: row;
+  width: 100%;
+}
+
+.User_selected {
+  z-index: 4;
+  position: absolute;
+  bottom: 16px;
+}
+
+@media screen and (min-width: 660px) {
+  .User_s.User {
+    width: 220px;
+  }
+  .User_selected {
+    display: none;
+  }
+}

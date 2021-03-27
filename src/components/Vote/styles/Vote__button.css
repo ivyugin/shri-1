@@ -1,0 +1,57 @@
+.Vote__button {
+  width: 64px;
+  height: 64px;
+  background-image: url(../../../images/button-dark.svg);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  grid-row: span 2;
+}
+
+.theme_light .Vote__button {
+  background-image: url(../../../images/button-light.svg);
+}
+
+.Vote__button_up {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  transform: rotate(180deg);
+}
+
+.Vote__button_down {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 11;
+  grid-row-end: 13;
+}
+
+.Vote__button:hover {
+  background-image: url(../../../images/button-hover-dark.svg);
+}
+
+.theme_light .Vote__button:hover {
+  background-image: url(../../../images/button-hover-light.svg);
+}
+
+.Vote__button:focus {
+  outline: none;
+}
+
+@media screen and (min-width: 660px) {
+  .Vote__button_up {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+  }
+
+  .Vote__button_down {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 6;
+    grid-row-end: 8;
+  }
+}

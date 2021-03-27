@@ -1,0 +1,18 @@
+.Chart__diagram {
+  width: 552px;
+  height: 177px;
+  margin: 33px auto 0;
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 660px) {
+  .Chart__diagram {
+    width: calc(100% + 24px);
+    height: 330px;
+    margin-top: 98px;
+    position: relative;
+    right: 24px;
+    justify-content: flex-end;
+  }
+}

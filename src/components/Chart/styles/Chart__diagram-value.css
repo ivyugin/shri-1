@@ -1,0 +1,28 @@
+.Chart__diagram-value {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 22px;
+  /* identical to box height, or 110% */
+
+  text-align: center;
+
+  /* Grey */
+
+  color: #918F8A;
+
+  margin: 0 0 8px;
+}
+
+.theme_light .Chart__diagram-value {
+  color: #BFBFBF;
+}
+
+.Chart__diagram-column_activ .Chart__diagram-value {
+  color: #FCFBF7;
+}
+
+.theme_light .Chart__diagram-column_activ .Chart__diagram-value {
+  color: #261C00;
+}

@@ -1,0 +1,21 @@
+.Chart__separator {
+  width: 2px;
+  height: 40px;
+  background: #918F8A;
+  opacity: 0.3;
+
+  margin: 0 16px 0;
+  border: none;
+}
+
+.theme_light .Chart__separator {
+  background: #BFBFBF;
+}
+
+@media screen and (max-width: 660px) {
+  .Chart__separator {
+    height: 2px;
+    width: 100%;
+    margin: 16px 0;
+  }
+}

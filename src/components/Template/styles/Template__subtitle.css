@@ -1,0 +1,21 @@
+.Template__subtitle {
+  margin: 8px 0 0;
+  color: #918F8A;
+  font-family: Roboto;
+  font-weight: medium;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.theme_light .Template__subtitle {
+  color: #BFBFBF;
+}
+
+@media screen and (max-width: 660px) {
+
+  .Template__subtitle {
+    text-align: left;
+  }
+}

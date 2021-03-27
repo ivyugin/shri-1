@@ -1,0 +1,14 @@
+@import url(./styles/Activity__grid.css);
+@import url(./styles/Activity__column.css);
+@import url(./styles/Activity__legend.css);
+@import url(./styles/Activity__legend-wrapper.css);
+@import url(./styles/Activity__legend-color.css);
+@import url(./styles/Activity__legend-text.css);
+
+.Activity {
+  height: 100%;
+  margin: 75px 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

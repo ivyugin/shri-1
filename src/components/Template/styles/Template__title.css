@@ -1,0 +1,20 @@
+.Template__title {
+  margin: 0;
+  color: #FCFBF7;
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.theme_light .Template__title {
+  color: #261C00;
+}
+
+@media screen and (max-width: 660px) {
+  .Template__title {
+    text-align: left;
+  }
+}

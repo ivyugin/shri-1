@@ -1,0 +1,27 @@
+@import url(./styles/Vote__user.css);
+@import url(./styles/Vote__button.css);
+
+.Vote {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-template-rows: repeat(8, 1fr);
+  grid-column-gap: 31px;
+  grid-row-gap: 4px;
+  align-items: center;
+  justify-items: center;
+   grid-auto-flow: column;
+  margin: 5px auto;
+
+}
+
+@media screen and (max-width: 660px) {
+  .Vote {
+    margin-top: 23px;
+    margin-bottom: 23px;
+    grid-column-gap: 8px;
+    grid-row-gap: 22px;
+
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(12, 1fr);
+  }
+}

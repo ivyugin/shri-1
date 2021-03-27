@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Roboto';
+    font-weight: 'bold;';
+    src: url(./fonts/Roboto-Bold.ttf) format('ttf');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-weight: '500';
+    src: url(./fonts/Roboto-Medium.ttf) format('ttf');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-weight: 'normal';
+    src: url(./fonts/Roboto-Regular.ttf) format('ttf');
+}
+
+@import url(./components/App/App.css);
+@import url(./components/Template/Template.css);
+@import url(./components/Leaders/Leaders.css);
+@import url(./components/Vote/Vote.css);
+@import url(./components/Chart/Chart.css);
+@import url(./components/User/User.css);
+@import url(./components/Diagram/Diagram.css);
+@import url(./components/DiagramСategories/DiagramСategories.css);
+@import url(./components/Activity/Activity.css);

@@ -1,0 +1,20 @@
+.DiagramСategories__title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  /* identical to box height, or 112% */
+
+
+  /* White */
+
+  color: #FCFBF7;
+
+  margin: 0;
+}
+
+.theme_light .DiagramСategories__title {
+
+  color: #261C00;
+}

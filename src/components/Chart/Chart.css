@@ -1,0 +1,11 @@
+@import url(./styles/Chart__diagram.css);
+@import url(./styles/Chart__liaders.css);
+@import url(./styles/Chart__separator.css);
+@import url(./styles/Chart__diagram-column.css);
+@import url(./styles/Chart__diagram-value.css);
+@import url(./styles/Chart__diagram-rect.css);
+@import url(./styles/Chart__diagram-title.css);
+
+.Chart {
+
+}

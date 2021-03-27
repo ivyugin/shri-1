@@ -1,0 +1,14 @@
+.Leaders__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+}
+
+@media screen and (max-width: 660px) {
+
+  .Leaders__container:nth-child(4n + 1) {
+    display: none;
+  }
+}

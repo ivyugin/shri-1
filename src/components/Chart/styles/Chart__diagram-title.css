@@ -1,0 +1,19 @@
+.Chart__diagram-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  /* identical to box height, or 112% */
+
+  text-align: center;
+
+  /* Grey */
+
+  color: #918F8A;
+  margin: 0;
+}
+
+.theme_light .Chart__diagram-title {
+  color: #BFBFBF;
+}

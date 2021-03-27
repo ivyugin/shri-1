@@ -1,0 +1,6 @@
+.Activity__legend {
+  margin: 32px auto 24px;
+  display: flex;
+  flex-direction: row;
+  width: 332px;
+}

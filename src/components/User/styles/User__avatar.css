@@ -1,0 +1,15 @@
+.User__avatar {
+  border-radius: 100px;
+  width: 64px;
+  height: 64px;
+  filter: grayscale(100%);
+}
+
+.User_s .User__avatar {
+  width: 40px;
+  height: 40px;
+}
+
+.theme_light .User__avatar {
+  filter: none;
+}

@@ -1,0 +1,16 @@
+.Diagram__separator {
+  width: 100%;
+  height: 2px;
+  background: #918F8A;
+  opacity: 0.3;
+  margin: 16px 0;
+  border: none;
+}
+
+.Diagram__separator:last-child {
+  display: none;
+}
+
+.theme_light .Diagram__separator {
+  background: #BFBFBF;
+}

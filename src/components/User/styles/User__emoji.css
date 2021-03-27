@@ -1,0 +1,9 @@
+.User__emoji {
+  position: absolute;
+  top: -22px;
+  margin: 0;
+  font-family: Roboto;
+  font-size: 32px;
+  line-height: 32px;
+  z-index: 1;
+}

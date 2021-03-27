@@ -1,0 +1,6 @@
+.Template__body {
+  margin: 20px 24px 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
