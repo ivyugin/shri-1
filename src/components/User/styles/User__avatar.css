@@ -3,6 +3,7 @@
   width: 64px;
   height: 64px;
   filter: grayscale(100%);
+  margin: 20px auto 0;
 }
 
 .User_s .User__avatar {
