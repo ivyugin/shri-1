@@ -1,7 +1,9 @@
 .Vote__button {
   width: 64px;
-  height: 64px;
+  height: 65px;
   background-image: url(../../../images/button-dark.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -19,6 +21,7 @@
   grid-row-start: 1;
   grid-row-end: 3;
   transform: rotate(180deg);
+
 }
 
 .Vote__button_down {
@@ -51,6 +54,11 @@
 }
 
 @media screen and (min-width: 660px) {
+  .Vote__button {
+    height: 90px;
+    background-position: top;
+  }
+
   .Vote__button_up {
     grid-column-start: 3;
     grid-column-end: 4;

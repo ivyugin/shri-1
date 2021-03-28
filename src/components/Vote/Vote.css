@@ -19,7 +19,7 @@
     margin-top: 23px;
     margin-bottom: 23px;
     grid-column-gap: 8px;
-    grid-row-gap: 23px;
+    grid-row-gap: 22px;
 
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(12, auto);
