@@ -14,48 +14,27 @@ import legendDark from '../../images/activiti-legend-dark.svg';
 import legendLight from '../../images/activiti-legend-light.svg';
 
 export default function Activity({ data, isLight }) {
-
-  const [horisontalWindow, setHorisontalWindow] = React.useState();
-  const [columns, setColumns] = React.useState([]);
-  const [columnsMax, setColumnsMax] = React.useState();
-
   const days = data.data;
 
-  let verticalArr = [];
-  const daysArr = Object.values(days);
-  for (let i=0; i<24; i++) {
-    for (let j=0; j<7; j++) {
-      verticalArr.push(daysArr[j][i]);
+  let columnsStep;
+  let columns = [];
+
+  if (window.innerWidth >= 660) {
+    const timeArr = days.mon.concat(days.tue, days.wed, days.thu, days.thu, days.sat, days.sun);
+    for (let i=0; i<timeArr.length; i+=2) {
+      columns.push(timeArr[i] + timeArr[i+1]);
     }
+    columnsStep = Math.max(...columns) / 3;
+
+  } else {
+    const daysArr = Object.values(days);
+    for (let i=0; i<24; i++) {
+      for (let j=0; j<7; j++) {
+        columns.push(daysArr[j][i]);
+      }
+    }
+    columnsStep = Math.max(...columns) / 3;
   }
-  const verticalArrMax = Math.max(...verticalArr) / 3;
-
-  let horizonArr = [];
-  const timeArr = days.mon.concat(days.tue, days.wed, days.thu, days.thu, days.sat, days.sun);
-  for (let i=0; i<timeArr.length; i+=2) {
-    horizonArr.push(timeArr[i] + timeArr[i+1]);
-  }
-  const horizonArrMax = Math.max(...horizonArr) / 3;
-
-  React.useEffect(() => {
-    function handleResize() {
-      setHorisontalWindow(window.innerWidth > 660);
-    }
-    
-    window.addEventListener("resize", handleResize);
-    handleResize();
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  React.useEffect(() => {
-    if (horisontalWindow) {
-      setColumns(horizonArr);
-      setColumnsMax(horizonArrMax);
-    } else {
-      setColumns(verticalArr);
-      setColumnsMax(verticalArrMax);
-    }
-  }, [horisontalWindow])
 
   return (
     <div className="Activity">
@@ -63,8 +42,8 @@ export default function Activity({ data, isLight }) {
         {
           columns.map((column, index) => {
             if (column == 0) return (<img src={isLight ? minLight : minDark} key={index} className="Activity__column" />)
-            if (column > columnsMax*2) return (<img src={isLight ? extraLight : extraDark} key={index} className="Activity__column" />)
-            if (column > columnsMax) return (<img src={isLight ? maxLight : maxDark} key={index} className="Activity__column" />)
+            if (column > columnsStep*2) return (<img src={isLight ? extraLight : extraDark} key={index} className="Activity__column" />)
+            if (column > columnsStep) return (<img src={isLight ? maxLight : maxDark} key={index} className="Activity__column" />)
             else return (<img src={isLight ? midLight : midDark} key={index} className="Activity__column" />)
           })
         }

@@ -10,7 +10,6 @@ function useQuery() {
 }
 
 function App({ alias, data }) {
-  const [voteUserID, setVoteUserID] = React.useState();
 
   const query = useQuery();
   const slide = query.get('slide');
@@ -24,8 +23,6 @@ return (
         alias={slide ? dataArr[slide-1].alias : alias}
         data={slide ? dataArr[slide-1].data : data}
         isLight={isLight}
-        voteUserID={voteUserID}
-        setVoteUserID={setVoteUserID}
       />
     </div>
   );

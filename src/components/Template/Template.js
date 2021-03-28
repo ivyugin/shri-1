@@ -6,7 +6,7 @@ import Diagram from '../Diagram/Diagram';
 import Activity from '../Activity/Activity';
 
 export default function Template({
-  alias, data, isLight, voteUserID, setVoteUserID,
+  alias, data, isLight,
 }) {
 
   function getTemplateByAlias() {
@@ -15,15 +15,12 @@ export default function Template({
         return (
           <Leaders
             data={data}
-            voteUserID={voteUserID}
           />
         );
       case 'vote':
         return (
           <Vote
             data={data}
-            voteUserID={voteUserID}
-            setVoteUserID={setVoteUserID}
           />
         );
       case 'chart':
