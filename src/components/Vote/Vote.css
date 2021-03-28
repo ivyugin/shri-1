@@ -9,7 +9,7 @@
   grid-row-gap: 4px;
   align-items: center;
   justify-items: center;
-   grid-auto-flow: column;
+  grid-auto-flow: row;
   margin: 5px auto;
 
 }
