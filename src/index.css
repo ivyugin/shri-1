@@ -1,19 +1,19 @@
 @font-face {
     font-family: 'Roboto';
     font-weight: 'bold;';
-    src: url(./fonts/Roboto-Bold.ttf) format('ttf');
+    src: url(./fonts/Roboto-Bold.ttf);
 }
 
 @font-face {
     font-family: 'Roboto';
     font-weight: '500';
-    src: url(./fonts/Roboto-Medium.ttf) format('ttf');
+    src: url(./fonts/Roboto-Medium.ttf);
 }
 
 @font-face {
     font-family: 'Roboto';
     font-weight: 'normal';
-    src: url(./fonts/Roboto-Regular.ttf) format('ttf');
+    src: url(./fonts/Roboto-Regular.ttf);
 }
 
 @import url(./components/App/App.css);
