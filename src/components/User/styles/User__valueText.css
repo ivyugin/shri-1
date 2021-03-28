@@ -1,6 +1,6 @@
 .User__valueText {
   font-family: Roboto;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 16px;
   /* identical to box height, or 114% */
@@ -15,15 +15,6 @@
 }
 
 .User_s .User__valueText {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 16px;
-  /* identical to box height, or 114% */
-
-
-  /* Grey */
 
   color: #918F8A;
   text-align: left;
