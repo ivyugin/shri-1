@@ -20,7 +20,7 @@ body{margin:0}
 .Chart__diagram-title{font-family:Roboto;font-style:normal;font-weight:500;font-size:16px;line-height:18px;text-align:center;color:#918f8a;margin:0}.theme_light .Chart__diagram-title{color:#bfbfbf}
 
 .User__avatar{border-radius:100px;width:64px;height:64px;filter:grayscale(100%)}.User_s .User__avatar{width:40px;height:40px}.theme_light .User__avatar{filter:none}
-.User__name{font-family:Roboto;font-style:normal;font-weight:500;font-size:16px;line-height:18px;text-align:center;color:#fcfbf7;width:80px;margin:6px auto 0}.User_s .User__name{width:auto;margin:0 0 4px}.theme_light .User__name{color:#261c00}
+.User__name{font-family:Roboto;font-style:normal;font-weight:500;font-size:16px;line-height:18px;text-align:center;color:#fcfbf7;margin:6px auto 0}.User_s .User__name{width:auto;margin:0 0 4px}.theme_light .User__name{color:#261c00}
 .User__valueText{text-align:center;color:#bfbfbf;margin:4px auto 0}.User__valueText,.User_s .User__valueText{font-family:Roboto;font-style:normal;font-weight:400;font-size:14px;line-height:16px}.User_s .User__valueText{color:#918f8a;text-align:left;margin:0}.theme_light .User__valueText{color:#bfbfbf}.User_selected .User__valueText{color:#fcfbf7}.theme_light .User_selected .User__valueText{color:#261c00}
 .User_s .User__description{margin-left:14px}
 .User__emoji{position:absolute;top:-22px;margin:0;font-family:Roboto;font-size:32px;line-height:32px;z-index:1}
