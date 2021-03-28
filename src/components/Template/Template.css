@@ -12,3 +12,7 @@
 .theme_light.Template {
   background: #FFFFFF;
 }
+
+.theme_light .Template {
+  background: #FFFFFF;
+}
