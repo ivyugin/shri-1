@@ -10,6 +10,7 @@ export default function Vote({ data }) {
   const disableUpScroll = offset == 0;
   
   function onCardClick(e) {
+    console.log('e.currentTarget')
     e.currentTarget.dataset.action = 'update';
     e.currentTarget.dataset.params = {
       alias: 'leaders',
@@ -29,7 +30,9 @@ export default function Vote({ data }) {
     }
   }
 
-  function onButtonDownClick(e) {
+  const onButtonDownClick = (e) => {
+    e.preventDefault();
+    console.log('e.currentTarget')
     e.currentTarget.dataset.action = 'update';
     e.currentTarget.dataset.params = {
       alias: 'vote',
