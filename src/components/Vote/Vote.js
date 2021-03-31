@@ -31,7 +31,6 @@ export default function Vote({ data }) {
   }
 
   const onButtonDownClick = (e) => {
-    e.preventDefault();
     console.log('e.currentTarget')
     e.currentTarget.dataset.action = 'update';
     e.currentTarget.dataset.params = {
@@ -41,6 +40,12 @@ export default function Vote({ data }) {
       }
     }
   }
+
+  React.useEffect(() => {
+     console.log(onButtonUpClick);
+  }, []);
+
+  
 
   return (
     <div className="Vote">
@@ -60,8 +65,8 @@ export default function Vote({ data }) {
           </div>
         )
       })}
-      <button className='Vote__button Vote__button_up' disabled={disableUpScroll} onClick={onButtonUpClick}></button>
-      <button className='Vote__button Vote__button_down' disabled={disableDownScroll} onClick={onButtonDownClick}></button>
+      <button className="Vote__button Vote__button_up" disabled={disableUpScroll} onClick={onButtonUpClick}></button>
+      <button className="Vote__button Vote__button_down" onClick={onButtonDownClick} disabled={disableDownScroll} ></button>
     </div>
   )
 }
