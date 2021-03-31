@@ -15,6 +15,7 @@
 
 .User_s.User {
   flex-direction: row;
+  align-items: flex-start;
   width: 100%;
 }
 

@@ -61,6 +61,7 @@ export default function Vote({ data }) {
               user={user}
               withoutValueText
               emoji={data.selectedUserId === user.id && '👍'}
+              isTwoLines
             />
           </div>
         )

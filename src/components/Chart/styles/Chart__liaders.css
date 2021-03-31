@@ -9,5 +9,6 @@
 @media screen and (max-width: 660px) {
   .Chart__liaders {
     flex-direction: column;
+    width: calc(100vw - 48px);
   }
 }

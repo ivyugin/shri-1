@@ -1,7 +1,8 @@
 .Template__container {
-  
+  /*
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%);*/
+  display: flex;
   height: 100%;
 }

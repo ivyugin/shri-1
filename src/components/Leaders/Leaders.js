@@ -19,6 +19,7 @@ export default function Leaders({ data }) {
         <User
           user={users[selectedUserTotalNotLeader ? selectedUserIndex : 4]}
           emoji={users[selectedUserTotalNotLeader ? selectedUserIndex : 4].id == selectedUserId && '👍' }
+          isTwoLines
         />
         <div className="Leaders__podium Leaders__podium_5">
           <p className="Leaders__place_left Leaders__place">
@@ -30,6 +31,7 @@ export default function Leaders({ data }) {
         <User
           user={users[2]}
           emoji={users[2].id == selectedUserId && '👍' }
+          isTwoLines
         />
         <div className="Leaders__podium Leaders__podium_3">
           <p className="Leaders__place_left Leaders__place">
@@ -41,8 +43,9 @@ export default function Leaders({ data }) {
         <User
           user={users[0]}
           emoji={emoji}
+          isTwoLines
         />
-        { selectedUserNotLeader && <User user={users[selectedUserIndex]} emoji={'👍'} selectedUserIndex={selectedUserIndex + 1} /> }
+        { selectedUserNotLeader && <User user={users[selectedUserIndex]} emoji={'👍'} selectedUserIndex={selectedUserIndex + 1} isTwoLines /> }
         <div className="Leaders__podium Leaders__podium_1 Leaders__place">
           1
         </div>
@@ -52,6 +55,7 @@ export default function Leaders({ data }) {
         <User
           user={users[1]}
           emoji={users[1].id == selectedUserId && '👍' }
+          isTwoLines
         />
         <div className="Leaders__podium Leaders__podium_2">
           <p className="Leaders__place_right Leaders__place">
@@ -63,6 +67,7 @@ export default function Leaders({ data }) {
         <User
           user={users[3]}
           emoji={users[3].id == selectedUserId && '👍' }
+          isTwoLines
         />
         <div className="Leaders__podium Leaders__podium_4">
           <p className="Leaders__place_right Leaders__place">
