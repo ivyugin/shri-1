@@ -6,6 +6,8 @@
 
   background: #918F8A;
   border: none;
+
+  margin: 9px auto 0;
 }
 
 .theme_light .User__separator {
