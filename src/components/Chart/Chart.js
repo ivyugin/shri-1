@@ -19,7 +19,7 @@ export default function Chart({ data }) {
               className={`Chart__diagram-column ${value.active && 'Chart__diagram-column_activ'}`}
               key={value.title}
             >
-              <p className="Chart__diagram-value">{value.value}</p>
+              {value.value !== 0 && <p className="Chart__diagram-value">{value.value}</p>}
               <div className="Chart__diagram-rect" style={{flex: value.value / maxValue}}></div>
               <p className="Chart__diagram-title">{value.title}</p>
             </div>
