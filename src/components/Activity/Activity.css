@@ -4,11 +4,17 @@
 @import url(./styles/Activity__legend-wrapper.css);
 @import url(./styles/Activity__legend-color.css);
 @import url(./styles/Activity__legend-text.css);
+@import url(./styles/Activity__legend-time.css);
 
 .Activity {
   height: 100%;
   margin: 75px 0 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+}
+
+@media screen and (max-width: 660px) {
+  .Activity {
+    justify-content: space-between;
+  }
 }

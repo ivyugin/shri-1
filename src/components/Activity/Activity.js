@@ -50,9 +50,7 @@ export default function Activity({ data, isLight }) {
       </div>
       <div className="Activity__legend">
           <div className="Activity__legend-wrapper">
-            <div className="Activity__legend-color">
-              <img src={isLight ? legendLight : legendDark} />
-            </div>
+            <div className="Activity__legend-time"></div>
             <p className="Activity__legend-text">2 часа</p>
           </div>
           <div className="Activity__legend-wrapper">

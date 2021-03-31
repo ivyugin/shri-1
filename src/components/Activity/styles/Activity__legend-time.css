@@ -1,0 +1,9 @@
+.Activity__legend-time {
+  width: 60px;
+  height: 12px;
+  background-image: url(../../../images/activiti-legend-dark.svg);
+}
+
+.theme_light .Activity__legend-time {
+  background-image: url(../../../images/activiti-legend-light.svg);
+}
