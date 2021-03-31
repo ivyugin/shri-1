@@ -13,6 +13,5 @@
 @media screen and (max-width: 660px) {
   .Leaders {
     grid-template-columns: 104px 120px 104px;
-    margin-top: 71px;
   }
 }

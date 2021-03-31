@@ -2,6 +2,7 @@
   margin: 20px 24px 0;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   height: calc(100% - 20px);
   width: calc(100% - 48px);
 }
