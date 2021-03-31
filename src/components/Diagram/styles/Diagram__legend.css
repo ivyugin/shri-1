@@ -6,5 +6,6 @@
 @media screen and (max-width: 660px) {
   .Diagram__legend {
     margin: 32px auto 0;
+    width: 100%;
   }
 }

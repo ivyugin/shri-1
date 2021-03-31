@@ -18,3 +18,11 @@
 .theme_light .Diagram__totalText {
   color: #261C00;
 }
+
+@media screen and (max-width: 660px) {
+  .Diagram__totalText {
+    width: 164px;
+    font-size: 30px;
+    line-height: 32px;
+  }
+}

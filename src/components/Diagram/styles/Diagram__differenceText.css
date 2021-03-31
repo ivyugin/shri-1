@@ -18,3 +18,11 @@
 .theme_light .Diagram__differenceText {
   color: #BFBFBF;
 }
+
+@media screen and (max-width: 660px) {
+  .Diagram__differenceText {
+    font-size: 20px;
+    line-height: 22px;
+    width: 164px;
+  }
+}
