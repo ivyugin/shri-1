@@ -6,6 +6,10 @@
   margin-right: 8px;
 }
 
+.Activity__legend-wrapper:last-child {
+  margin-right: 0;
+}
+
 @media screen and (max-width: 660px) {
   .Activity__legend-wrapper {
     align-items: flex-start;
