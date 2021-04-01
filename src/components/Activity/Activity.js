@@ -7,7 +7,7 @@ export default function Activity({ data }) {
   let columns = [];
 
   if (window.innerWidth >= 660) {
-    const timeArr = days.mon.concat(days.tue, days.wed, days.thu, days.thu, days.sat, days.sun);
+    const timeArr = days.mon.concat(days.tue, days.wed, days.thu, days.fri, days.sat, days.sun);
     for (let i=0; i<timeArr.length; i+=2) {
       columns.push(timeArr[i] + timeArr[i+1]);
     }
@@ -22,6 +22,10 @@ export default function Activity({ data }) {
     }
     columnsStep = Math.max(...columns) / 3;
   }
+
+  console.log(days)
+  console.log(columns)
+  console.log(columnsStep)
 
   return (
     <div className="Activity">
