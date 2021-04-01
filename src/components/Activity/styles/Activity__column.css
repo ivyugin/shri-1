@@ -3,6 +3,45 @@
   grid-column: span 2;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
+  width: 100%;
+  
+}
+
+.Activity__column_s {
+  background-image: url(../../../images/min-dark.svg);
+  height: 245%;
+}
+
+.Activity__column_m {
+  background-image: url(../../../images/mid-dark.svg);
+  height: 303%;
+}
+
+.Activity__column_l {
+  background-image: url(../../../images/max-dark.svg);
+  height: 418%;
+}
+
+.Activity__column_xl {
+  background-image: url(../../../images/extra-dark.svg);
+  height: 533%;
+}
+
+.theme_light .Activity__column_s {
+  background-image: url(../../../images/min-light.svg);
+}
+
+.theme_light .Activity__column_m {
+  background-image: url(../../../images/mid-light.svg);
+}
+
+.theme_light .Activity__column_l {
+  background-image: url(../../../images/max-light.svg);
+}
+
+.theme_light .Activity__column_xl {
+  background-image: url(../../../images/extra-light.svg);
 }
 
 @media screen and (min-width: 660px) {

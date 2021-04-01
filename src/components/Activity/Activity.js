@@ -1,19 +1,6 @@
 import React from 'react';
 
-import minDark from '../../images/min-dark.svg';
-import midDark from '../../images/mid-dark.svg';
-import maxDark from '../../images/max-dark.svg';
-import extraDark from '../../images/extra-dark.svg';
-
-import minLight from '../../images/min-light.svg';
-import midLight from '../../images/mid-light.svg';
-import maxLight from '../../images/max-light.svg';
-import extraLight from '../../images/extra-light.svg';
-
-import legendDark from '../../images/activiti-legend-dark.svg';
-import legendLight from '../../images/activiti-legend-light.svg';
-
-export default function Activity({ data, isLight }) {
+export default function Activity({ data }) {
   const days = data.data;
 
   let columnsStep;
@@ -36,15 +23,40 @@ export default function Activity({ data, isLight }) {
     columnsStep = Math.max(...columns) / 3;
   }
 
+  console.log(columnsStep);
+
   return (
     <div className="Activity">
       <div className="Activity__grid">
         {
           columns.map((column, index) => {
-            if (column == 0) return (<img src={isLight ? minLight : minDark} key={index} className="Activity__column" />)
-            if (column > columnsStep*2) return (<img src={isLight ? extraLight : extraDark} key={index} className="Activity__column" />)
-            if (column > columnsStep) return (<img src={isLight ? maxLight : maxDark} key={index} className="Activity__column" />)
-            else return (<img src={isLight ? midLight : midDark} key={index} className="Activity__column" />)
+            if (column == 0)
+              return (
+                <div
+                  key={index}
+                  className="Activity__column Activity__column_s">
+                </div>
+              )
+            if (column < columnsStep)
+              return (
+                <div
+                  key={index} 
+                  className="Activity__column Activity__column_m">
+                </div>
+              )
+            if (column > columnsStep*2)
+              return (
+                <div
+                  key={index} 
+                  className="Activity__column Activity__column_l">
+                </div>
+              )
+            else return (
+                  <div
+                    key={index}
+                    className="Activity__column Activity__column_xl">
+                  </div>
+                )
           })
         }
       </div>
