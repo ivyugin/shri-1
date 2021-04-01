@@ -1,6 +1,12 @@
 .Activity__legend {
-  margin: 32px auto 24px;
+  margin: 0 auto 24px;
   display: flex;
   flex-direction: row;
   width: 332px;
+}
+
+@media screen and (min-width: 660px) {
+  .Activity__legend {
+    margin-top: 40px;
+  }
 }

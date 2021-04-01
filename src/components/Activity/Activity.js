@@ -23,8 +23,6 @@ export default function Activity({ data }) {
     columnsStep = Math.max(...columns) / 3;
   }
 
-  console.log(columnsStep);
-
   return (
     <div className="Activity">
       <div className="Activity__grid">
@@ -37,14 +35,14 @@ export default function Activity({ data }) {
                   className="Activity__column Activity__column_s">
                 </div>
               )
-            if (column < columnsStep)
+            if (column <= columnsStep)
               return (
                 <div
                   key={index} 
                   className="Activity__column Activity__column_m">
                 </div>
               )
-            if (column > columnsStep*2)
+            if (column <= columnsStep*2)
               return (
                 <div
                   key={index} 
@@ -63,7 +61,7 @@ export default function Activity({ data }) {
       <div className="Activity__legend">
           <div className="Activity__legend-wrapper">
             <div className="Activity__legend-time"></div>
-            <p className="Activity__legend-text">2 часа</p>
+            <p className="Activity__legend-text">{columns.length > 100 ? '1 час' : '2 часа'}</p>
           </div>
           <div className="Activity__legend-wrapper">
             <div className="Activity__legend-color"></div>
