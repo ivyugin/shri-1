@@ -11,9 +11,9 @@
 
 @media screen and (max-width: 660px) {
   .Activity__grid {
-    padding-top: 10px;
+    padding-top: 25px;
     margin: auto;
-    height: 428px;
+    height: 410px;
     width: 328px;
     grid-template-rows: repeat(24, calc(100% / 24));
     grid-template-columns: repeat(15, calc(100% / 15));
