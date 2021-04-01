@@ -1,5 +1,5 @@
 .Activity__grid {
-  padding-top: 50px;
+  padding-top: 45px;
   width: 425px;
   height: 95px;
   margin: 0 auto;
@@ -14,7 +14,7 @@
     padding-top: 25px;
     margin: auto;
     height: 405px;
-    width: 310px;
+    width: 318px;
     grid-template-rows: repeat(24, calc(100% / 24));
     grid-template-columns: repeat(15, calc(100% / 15));
   }
