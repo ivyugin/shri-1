@@ -8,24 +8,21 @@ import './index.css';
 import dataArr from './data/data.json';
 
 function renderTemplate(alias, data) {
-  return ReactDOMServer.renderToString (
-    <BrowserRouter>
-      <App 
-        alias={alias}
-        data={data}
-      />
-    </BrowserRouter>
+  return ReactDOMServer.renderToStaticMarkup (
+      <BrowserRouter>
+        <App 
+          alias={alias}
+          data={data}
+        />
+      </BrowserRouter>
   );
 }
 
 window.renderTemplate = renderTemplate;
-//console.log(window)
 
 ReactDOM.render(
-    <BrowserRouter>
-      <div dangerouslySetInnerHTML={{
-        __html: renderTemplate(dataArr[0].alias, dataArr[0].data)
-      }}></div>
-    </BrowserRouter>,
+    <div dangerouslySetInnerHTML={{
+      __html: renderTemplate(dataArr[0].alias, dataArr[0].data)
+    }}></div>,
   document.getElementById("root")
 );

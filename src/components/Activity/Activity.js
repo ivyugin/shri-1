@@ -23,10 +23,6 @@ export default function Activity({ data }) {
     columnsStep = Math.max(...columns) / 3;
   }
 
-  console.log(days)
-  console.log(columns)
-  console.log(columnsStep)
-
   return (
     <div className="Activity">
       <div className="Activity__grid">

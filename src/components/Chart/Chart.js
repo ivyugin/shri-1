@@ -8,7 +8,6 @@ export default function Chart({ data }) {
 
   let maxValue = 0;
   values.forEach(value => {if (value.value > maxValue) maxValue = value.value})
-  console.log(maxValue)
   
   return (
     <div className="Chart">
