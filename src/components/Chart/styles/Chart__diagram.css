@@ -16,3 +16,10 @@
     justify-content: flex-end;
   }
 }
+
+
+@media screen and (min-width: 700px) and (min-height: 500px) {
+  .Chart__diagram {
+    height: 60vh;
+  }
+}

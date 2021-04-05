@@ -73,3 +73,27 @@
     height: 225px;
   }
 }
+
+@media screen and (min-width: 700px) and (min-height: 550px) {
+  .Leaders__podium_1 {
+    height: 80vh;
+  }
+
+  .Leaders__podium_2 {
+    height: calc(80vh - 50px);
+    
+  }
+
+  .Leaders__podium_3 {
+    height: calc(80vh - 100px);
+  }
+
+  .Leaders__podium_4 {
+    height: calc(80vh - 150px);
+    
+  }
+
+  .Leaders__podium_5 {
+    height: calc(80vh - 200px);
+  }
+}
